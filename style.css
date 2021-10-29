@@ -32,3 +32,47 @@ body{
     display: flex;
     flex-direction: row;
 }
+
+
+#enlarged-box {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#container {
+    width: 500px;
+    height: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: initial;
+}
+
+.close {
+    font-size: xx-large;
+    color: white;
+    float: right;
+}
+
+#previous {
+    position: absolute;
+    font-size: xx-large;
+    top: 400px;
+    left: 300px;
+    color: white;
+}
+
+#next {
+    position: absolute;
+    font-size: xx-large;
+    top: 400px;
+    right: 300px;
+    color: white;
+}
