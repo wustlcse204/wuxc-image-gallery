@@ -1,74 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <!--adding in description for search engine-->
-    <!--content contents are from https://www.google.com/search?q=instagram&oq=instagram+&aqs=chrome..69i57j69i59l2j69i60l5.2402j0j4&sourceid=chrome&ie=UTF-8-->
-    <meta name="description"
-        content="this is my image gallery" />
-    <title>WUXC <3</title>
-    <!--importing font awesome-->
-    <script src="https://kit.fontawesome.com/d76e9cf8b6.js" crossorigin="anonymous"></script>
+    <title>WUXC!</title>
     <script type="text/javascript" src="main.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
 </head>
-<!--icon for tab-->
-<link rel="icon"
-    href="https://swimswam.com/wp-content/uploads/2021/06/Athletic_Bear_Head_Logo_CMYK-copy-300x300.png">
-<!--font-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Rampart+One&display=swap" rel="stylesheet">
-<!--the beginning of everything-->
+
+
 <body>
-<welcome>
-    here are some pictures of wuxc
-</welcome>
-<div class="row">
-    <div class="column">
-      <img src="stiles.jpg" alt="stiles"  onclick="enlarge(this)" id = "10" style="width:100%">
+    <welcome>
+        here are some pictures of wuxc
+    </welcome>
+    <div class="row">
+        <div class="column">
+            <img class="image" src="boys.jpg" alt="image-1" onclick="makeBig(this)" idx="0">
+        </div>
+        <div class="column">
+            <img class="image" src="boys-pic.jpg" alt="image-2" onclick="makeBig(this)" idx="1">
+        </div>
+        <div class="column">
+            <img class="image" src="carmen.jpg" alt="image-3" onclick="makeBig(this)" idx="2">
+        </div>
+        <div class="column">
+            <img class="image" src="chipotle-mirror.jpg" alt="image-4" onclick="makeBig(this)" idx="3">
+        </div>
+        <div class="column">
+            <img class="image" src="ella.jpg" alt="image-5" onclick="makeBig(this)" idx="4">
+        </div>
+        <div class="column">
+            <img class="image" src="frosh-women.jpg" alt="image-6" onclick="makeBig(this)" idx="5">
+        </div>
+        <div class="column">
+            <img class="image" src="girls.jpg" alt="image-7" onclick="makeBig(this)" idx="6">
+        </div>
+        <div class="column">
+            <img class="image" src="htd-avdawg.jpg" alt="image-8" onclick="makeBig(this)" idx="7">
+        </div>
+        <div class="column">
+            <img class="image" src="micah.jpg" alt="image-9" onclick="makeBig(this)" idx="8">
+        </div>
+        <div class="column">
+            <img class="image" src="mood-pic.jpg" alt="image-10" onclick="makeBig(this)" idx="9">
+        </div>
+        <div class="column">
+            <img class="image" src="stiles.jpg" alt="image-11" onclick="makeBig(this)" idx="10">
+        </div>
+        <div class="column">
+            <img class="image" src="soph-boys.jpg" alt="image-12" onclick="makeBig(this)" idx="11">
+        </div>
     </div>
-    <div class="column">
-      <img src="micah.jpg" alt="micah putting on his bib"  onclick="enlarge(this)"id = "11" style="width:100%">
+    <div id="big-pic">
+        <div id="container">
+            <span class="close" onclick="closeBig(this)">&times;</span>
+            <img id="bigImage" style = "width: 1000px">
+            <span id="previous">&#10094;
+            </span>
+            <span id="next">&#10095;</span>
+        </div>
     </div>
-    <div class="column">
-      <img src="carmen.jpg" alt="neil + carmen + elizabeth"  onclick="enlarge(this)" id = "12" style="width:100%">
-    </div>
-  </div>
-  <div class="row">
-    <div class="column">
-      <img src="boys-pic.jpg" alt="boys"  onclick="enlarge(this)" id = "1" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="boys.jpg" alt="boys" onclick="enlarge(this)" id = "2" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="soph-boys.jpg" alt="boys" onclick="enlarge(this)" id = "3" style="width:100%">
-    </div>
-  </div>
-  <div class="row">
-    <div class="column">
-      <img src="chipotle-mirror.jpg" alt="boys" onclick="enlarge(this)" id = "4" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="ella.jpg" alt="boys" onclick="enlarge(this)" id = "5" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="mood-pic.jpg" alt="boys" onclick="enlarge(this)" id = "6" style="width:100%">
-    </div>
-  </div>
-  <div class="row">
-    <div class="column">
-      <img src="frosh-women.jpg" alt="boys" onclick="enlarge(this)" id = "7" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="girls.jpg" alt="boys" onclick="enlarge(this)" id = "8" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="htd-avdawg.jpg" alt="boys" onclick="enlarge(this)" id = "9" style="width:100%">
-    </div>
-  </div>
+
 </body>
-<!--the end of everything-->
+
 </html>
