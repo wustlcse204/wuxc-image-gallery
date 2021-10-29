@@ -8,9 +8,27 @@ welcome{
     justify-content: center;
 }
 body{
-    background-color: #E6DDC5;
+    /* background-color: #E6DDC5; */
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .first-row{
     display: flex;
     justify-content:space-evenly;
+    flex-direction: row;
+    gap: 10%;
+}
+.column {
+    width: 33.33%;
+    padding: 5px;
+  }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row{
+    display: flex;
+    flex-direction: row;
 }
