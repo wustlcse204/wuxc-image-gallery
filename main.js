@@ -8,7 +8,7 @@ function enlarge(imgs) {
     expandImg = document.getElementById('expandedImg');
     slideIndex = parseInt(imgs.getAttribute("idx"));
     expandImg.src = imgs.src;
-    document.getElementById("enlargedImage").style.display = "block";
+    document.getElementById("enlarged-section").style.display = "block";
     console.log(slideIndex)
     allImages = document.getElementsByClassName('image');
     lastItem = allImages[allImages.length - 1];
@@ -20,7 +20,7 @@ function enlarge(imgs) {
 }
 
 function closeImage(close) {
-    document.getElementById("enlargedImage").style.display = "none";
+    document.getElementById("enlarged-section").style.display = "none";
 }
 
 function previous() {
